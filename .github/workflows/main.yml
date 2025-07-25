@@ -1,0 +1,13 @@
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  fail:
+    name: Always Fail
+    runs-on: "linux"
+    steps:
+      - name: fail
+        uses: cutenode/action-always-fail@a4c550da5463ba7eb224caf9cd2e02d4c82c1eb0
+          
